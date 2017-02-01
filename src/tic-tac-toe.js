@@ -39,10 +39,7 @@ class TicTacToe {
         {
             return true;
         }
-        else
-        {
-            return false;
-        }
+        return false;
     }
 
     getWinner() {
@@ -101,14 +98,7 @@ class TicTacToe {
             }
         }
 
-        if ( isNull )
-        {
-            return false;
-        }
-        else
-        {
-            return true;
-        }
+        return !isNull;
     }
 
     isDraw() {
@@ -117,12 +107,7 @@ class TicTacToe {
         {
             return true;
         }
-        else
-        {
-            return false;
-        }
-
-
+        return false;
     }
 
     getFieldValue(rowIndex, colIndex) {
